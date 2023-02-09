@@ -1,0 +1,92 @@
+// ======= Blog Section =======
+section#blog.blog
+  .container
+    .row.g-5
+      .col-lg-4
+        .sidebar.ps-lg-4
+          .sidebar-item.recent-posts
+            h3.sidebar-title Formações Recentes
+            .mt-3
+              .post-item.mt-3
+                img.flex-shrink-0(src='assets/img/estagio_iniciacao_cientifica.webp' alt='')
+                div
+                  h4
+                    a(href='blog-post.html') Nihil blanditiis at in nihil autem
+                  a.sidebar-a(href='blog-post.html') Ver mais
+              // End recent post item
+              .post-item
+                img.flex-shrink-0(src='assets/img/estagio_iniciacao_cientifica.webp' alt='')
+                div
+                  h4
+                    a(href='blog-post.html') Quidem autem et impedit
+                  a.sidebar-a(href='blog-post.html') Ver mais
+              // End recent post item
+              .post-item
+                img.flex-shrink-0(src='assets/img/estagio_iniciacao_cientifica.webp' alt='')
+                div
+                  h4
+                    a(href='blog-post.html') Id quia et et ut maxime similique occaecati ut
+                  a.sidebar-a(href='blog-post.html') Ver mais
+              // End recent post item
+              // End sidebar recent posts
+              .sidebar-item.categories
+                h3.sidebar-title Info Formação
+                ul.mt-3
+                  li
+                    a(href='#')
+                      | Duração 
+                      span (60h)
+                  li
+                    a(href='#')
+                      | Professores 
+                      span (02)
+                  li
+                    a(href='#')
+                      | Localização
+                      span Bragança
+              // End sidebar categories
+              // End Blog Sidebar
+      .col-lg-8
+        .row.gy-5.posts-list
+          section.container
+            .row
+              .col-12
+                section#portfolio.portfolio.teste
+                  .container
+                    .portfolio-isotope(data-portfolio-filter='*' data-portfolio-layout='masonry' data-portfolio-sort='original-order')
+                      .topnav
+                        ul.portfolio-flters
+                          li.filter-active(data-filter='*') Aprendizagem
+                          li(data-filter='.filter-ects6') Organização
+                          li(data-filter='.filter-ects3') Testemunhos
+                          li(data-filter='.filter-ects3') Instruções Inscrição
+                        // End Portfolio Filters
+                section#about.about
+                  .container
+                    .row
+                      .col-lg-12
+                        .content.ps-lg-5
+                          h5.h2-if2 O que vais aprender
+                          p.p-if2
+                            | O módulo de empreendedorismo decorre na modalidade seminários e workshops, onde são estudadas etapas fundamentais para a criação de uma empresa, tais como:
+                          ul
+                            li
+                              i.bi.bi-check-circle-fill
+                              | Os processos de inovação e criação de empresas;
+                            li
+                              i.bi.bi-check-circle-fill
+                              | Os processos e mecanismos de proteção dos resultados de investigação;
+                            li
+                              i.bi.bi-check-circle-fill
+                              | As estratégias de negócio nos domínios das tecnologias e sistemas de informação;
+                            li
+                              i.bi.bi-check-circle-fill
+                              | O processo legal de constituição de empresas e registos de marcas e patentes;
+                            li
+                              i.bi.bi-check-circle-fill
+                              | Mecanismos de financiamento de negócios;
+                            li
+                              i.bi.bi-check-circle-fill
+                              | Elaboração de planos de negócios.
+        // End blog posts list
+// End Blog Section

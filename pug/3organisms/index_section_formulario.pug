@@ -1,0 +1,21 @@
+// Formulário Section
+section.update-section(style="background-image: url(assets/img/background_blue.webp);")
+  .container
+    .row
+      .col-12
+        h2.text-center.h2-form Manter-me Atualizado
+        h3.text-center.h3-form Não percas nenhuma formação
+    .row
+      .col-12.form-section
+        form.update-form
+          .form-group
+            input.form-control.transparent-input(type="text" placeholder="Nome")
+          .form-group.d-flex
+            input.form-control.mr-2.transparent-input.input-dividido1(type="email" placeholder="E-Mail")
+            input.form-control.ml-2.transparent-input.input-dividido2(type="tel" placeholder="Telemóvel")
+          .form-group.form-check
+            input#consent-check.form-check-input(type="checkbox")
+            label.form-check-label(for="consent-check")
+              | Autorizo a utilização dos dados inseridos, conforme o Regulamento Geral sobre a Proteção de Dados.
+          input.btn.btn-primary(type="submit" value="Subscrever")
+// End Formulário Section

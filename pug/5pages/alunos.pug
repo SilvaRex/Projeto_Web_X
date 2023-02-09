@@ -1,0 +1,11 @@
+extends ../4templates/base
+include ../3organisms/section_banner
+
+block pageTitle
+  title Alunos | Inovação Formativa
+
+block sectionBanner
+  +sectionOrganism("ESCOLHE O","TEU PERCURSO","ACADÉMICO", "assets/img/inovacao_formativa.webp")
+  
+  block aludocSection
+    include ../3organisms/aludoc_section

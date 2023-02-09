@@ -1,0 +1,11 @@
+extends ../4templates/base
+include ../3organisms/section_banner
+
+block pageTitle
+  title Docentes | Inovação Formativa
+
+block sectionBanner
+  +sectionOrganism("ENRIQUECE","NA TUA","FORMAÇÃO", "assets/img/docentes.webp")
+  
+  block aludocSection
+    include ../3organisms/aludoc_section

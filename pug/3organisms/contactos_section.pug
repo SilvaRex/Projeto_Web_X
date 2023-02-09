@@ -1,0 +1,62 @@
+//Contact Section
+section#contact.contact
+  .container.position-relative
+    .row.gy-4.d-flex
+      h3.h3-contacto Não percas nada
+      h2.h2-contacto Junta-te a nós
+      p.p-contacto
+        | A resposta a todos esses desafios exige um portfolio variado de ferramentas, que
+        br
+        | pretendemos agregar neste espaço.
+      .col-lg-6.form-contactos
+        form.update-form(action='forms/contact.php' method='post' role='form')
+          .row
+            .form-group1
+              input#subject.form-control1(type='text' name='subject' placeholder='Nome' required='')
+            .form-group1
+              select#assunto.form-control1(name='assunto')
+                option(value='parceiro') Parceiro
+                option(value='docente') Docente
+                option(value='aluno') Aluno
+            .col-md-6.form-group1
+              input#name.form-control1(type='text' name='name' placeholder='E-Mail' required='')
+            .col-md-6.form-group.mt-3.mt-md-0
+              input#email.form-control1(type='email' name='email' placeholder='Telemóvel' required='')
+          .form-group1
+            textarea.form-control1(name='message' rows='5' placeholder='Mensagem' required='')
+          .form-group.form-check
+            input#consent-check.form-check-input(type='checkbox')
+            label.form-check-label-contacto(for='consent-check')
+              | Autorizo a utilização dos dados inseridos, conforme o Regulamento Geral sobre a Proteção de Dados.
+          .text-center
+            a.submit-contacto(type='submit') SUBSCREVER
+      // End Contact Form
+      .col-lg-6.contacto-info
+        h3.h3-contacto-info Os nossos contactos
+        .info-item.d-flex
+          i.bi.bi-geo-alt.flex-shrink-0
+          div
+            h4 Bragança
+            p Campus de Santa Apolónia
+            p 5300-253 BRAGANÇA
+        // End Info Item
+        .info-item.d-flex
+          i.bi.bi-envelope.flex-shrink-0
+          div
+            h4 Email
+            p if@ipb.pt
+        // End Info Item
+        .info-item.d-flex
+          i.bi.bi-phone.flex-shrink-0
+          div
+            h4 Telefone
+            p (+351) 273 303 200
+        // End Info Item
+        .info-item.d-flex
+          div
+            h4.contacto-info-redes-sociais Segue-nos nas Redes Sociais
+            a.fa.fa-instagram(href='#')
+            a.fa.fa-facebook(href='#')
+            a.fa.fa-linkedin(href='#')
+        // End Info Item
+// End Contact Section

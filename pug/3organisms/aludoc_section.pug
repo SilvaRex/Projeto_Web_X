@@ -1,0 +1,68 @@
+// Alunos/Docentes Section
+section#blog.blog
+  .container
+    .row.g-5
+      .col-lg-2
+        .sidebar.ps-lg-4
+          .sidebar-item.categories
+            h3.sidebar-title Categorias
+            ul.mt-3
+              li
+                a(href='#')
+                  | Estágios
+                  span (25)
+              li
+                a(href='#')
+                  | Científicos
+                  span (12)
+              li
+                a(href='#')
+                  | Práticos
+                  span (5)
+          // End sidebar categories
+        // End Blog Sidebar
+      .col-lg-10
+        h3.h3-formacoes1 ESCOLHES TU
+        h2.h2-formacoes1 INOVAÇÃO
+        h2.h2-formacoes1 FORMATIVA
+        .row.gy-5.posts-list
+          section#portfolio.portfolio
+            .container
+              .portfolio-isotope(data-portfolio-filter='*' data-portfolio-layout='masonry' data-portfolio-sort='original-order')
+                .topnav
+                  ul.portfolio-flters
+                    li.filter-active(data-filter='*') Tudo
+                    li(data-filter='.filter-ects6') 6 ECTS
+                    li(data-filter='.filter-ects3') 3 ECTS
+                    .search-container
+                      form(action='/action_page.php')
+                        input(type='text' placeholder='Search..' name='search')
+                  // End Portfolio Filters
+          .d-flex.flex-row.portfolio-item.filter-ects3
+            .p-0
+              img.img-fluid.img-formacoes(src='assets/img/teste.webp' alt='Emprendorismo')
+            .w-50.container-formacoes
+              h3.text-left.h3-formacoes Empreendorismo
+              h5.text-left.h5-formacoes 3 ECTS | 1&ordm; e 2&ordm; Semestre
+              hr.hr-formacoes
+              p.text-left.p-formacoes
+                | O m&oacute;dulo de empreendedorismo decorre na modalidade semin&aacute;rios e workshops, onde s&atilde;o estudadas etapas fundamentais para a cria&ccedil;&atilde;o de uma empresa, tais como&mldr;
+              .d-flex.justify-content-between
+                button.cta-formacoes1(type='button') Explorar Coursera
+                button.cta-formacoes2(type='button') Inscrever Agora
+          // End post list item
+          .d-flex.flex-row.filter-ects3
+            .p-0
+              img.img-fluid.img-formacoes(src='assets/img/teste.webp' alt='Emprendorismo')
+            .w-50.container-formacoes
+              h3.text-left.h3-formacoes Empreendorismo
+              h5.text-left.h5-formacoes 3 ECTS | 1&ordm; e 2&ordm; Semestre
+              hr.hr-formacoes
+              p.text-left.p-formacoes
+                | O m&oacute;dulo de empreendedorismo decorre na modalidade semin&aacute;rios e workshops, onde s&atilde;o estudadas etapas fundamentais para a cria&ccedil;&atilde;o de uma empresa, tais como&mldr;
+              .d-flex.justify-content-between
+                button.cta-formacoes1(type='button') Explorar Coursera
+                button.cta-formacoes2(type='button') Inscrever Agora
+          // End post list item
+        // End blog posts list
+// End Alunos/Docentes Section

@@ -1,0 +1,13 @@
+//Base Section
+include ../1atoms/base_titulo
+include ../1atoms/base_subtitulo
+include ../1atoms/base_content
+mixin baseSection(subtitle, title, content)
+    section#blog.blog
+        .container
+            .row.g-5
+                .col-lg-12
+                    +baseSubtitle(subtitle)
+                    +baseTitle(title)
+                    +baseContent(content)
+//End Base Section

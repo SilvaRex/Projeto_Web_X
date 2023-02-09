@@ -1,0 +1,18 @@
+doctype html
+html(lang="pt")
+  head
+    include ../3organisms/head
+    block pageTitle
+      title= pageTitle || 'Default Title' | 'Inovação Formativa'
+  body
+    include ../3organisms/header
+    include ../3organisms/index_section_banner
+    main
+      include ../3organisms/index_section_blue
+      include ../3organisms/index_section_estrategias
+      include ../3organisms/index_section_formacoes
+      include ../3organisms/index_section_formulario
+      include ../3organisms/index_section_testemunhos
+      include ../3organisms/index_section_parceiros
+      include ../3organisms/index_section_cta
+    include ../3organisms/footer

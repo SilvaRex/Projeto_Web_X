@@ -1,0 +1,11 @@
+extends ../4templates/base
+include ../3organisms/section_banner
+
+block pageTitle
+  title Inovação Formativa | Inovação Formativa
+
+block sectionBanner
+  +sectionOrganism("EMPREENDORISMO","","", "assets/img/empreendorismo.webp")
+  
+  block ifSection
+    include ../3organisms/if_section
